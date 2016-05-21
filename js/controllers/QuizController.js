@@ -1,0 +1,148 @@
+app.controller('QuizController', ['$scope', 
+function($scope) {
+	$scope.items = [
+	{
+		questionNumber: 1,
+		cover: 'img/1.jpg',
+		question: 'Nowadays Bohemia is called...',
+		option1: 'Italy',
+		option2: 'The Czech Republic',
+		option3: 'France',
+		answer: 'The Czech Republic',
+	},
+	{
+		questionNumber: 2,
+		cover: 'img/2.jpg',
+		question: 'Nowadays Ceylon is called...',
+		option1: 'Indonesia',
+		option2: 'Sri Lanka',
+		option3: 'India',
+		answer: 'Sri Lanka',
+	},
+	{
+		questionNumber: 3,
+		cover: 'img/3.jpg',
+		question: 'Nowadays Constantinople is called...',
+		option1: 'Rome',
+		option2: 'Cairo',
+		option3: 'Istanbul',
+		answer: 'Istanbul',
+	},
+	{
+		questionNumber: 4,
+		cover: 'img/4.jpg',
+		question: 'Nowadays Persia is called...',
+		option1: 'Iraq',
+		option2: 'Thailand',
+		option3: 'Iran',
+		answer: 'Iran',
+	},
+	{
+		questionNumber: 5,
+		cover: 'img/5.jpg',
+		question: 'Nowadays Kampuchea is called...',
+		option1: 'Cambodia',
+		option2: 'India',
+		option3: 'Myanmar',
+		answer: 'Cambodia',
+	},
+	{
+		questionNumber: 6,
+		cover: 'img/6.jpg',
+		question: 'Nowadays Leningrad is called...',
+		option1: 'Leninogorsk',
+		option2: 'Kaliningrad',
+		option3: 'Saint Petersburg',
+		answer: 'Saint Petersburg',
+	},
+	{
+		questionNumber: 7,
+		cover: 'img/7.jpg',
+		question: 'Nowadays Numidia is called...',
+		option1: 'Cameroon',
+		option2: 'Egypt',
+		option3: 'Algeria',
+		answer: 'Algeria',
+	},
+	{
+		questionNumber: 8,
+		cover: 'img/8.jpg',
+		question: 'Nowadays Tripolitania is called...',
+		option1: 'Libya',
+		option2: 'India',
+		option3: 'Saudi Arabia',
+		answer: 'Libya',
+	},
+	{
+		questionNumber: 9,
+		cover: 'img/9.jpg',
+		question: 'Nowadays Siam is called...',
+		option1: 'Thailand',
+		option2: 'Singapore',
+		option3: 'Vietnam',
+		answer: 'Thailand',
+	},
+	{
+		questionNumber: 10,
+		cover: 'img/10.jpg',
+		question: 'Nowadays Gaul is called...',
+		option1: 'France',
+		option2: 'Greece',
+		option3: 'Germany',
+		answer: 'France',
+	},
+	{
+		questionNumber: 11,
+		cover: 'img/11.jpg',
+		question: 'Nowadays Saigon is called...',
+		option1: 'Ho Chi Minh City',
+		option2: 'Beijing',
+		option3: 'Bangkok',
+		answer: 'Ho Chi Minh City',
+	},
+	{
+		questionNumber: 12,
+		cover: 'img/12.jpg',
+		question: 'Nowadays Mesopotamia is called...',
+		option1: 'Israel',
+		option2: 'Lebanon',
+		option3: 'Iraq',
+		answer: 'Iraq',
+	},
+	{
+		questionNumber: 13,
+		cover: 'img/13.jpg',
+		question: 'Nowadays Edo is called...',
+		option1: 'Kyoto',
+		option2: 'Tokyo',
+		option3: 'Qingdao',
+		answer: 'Tokyo',
+	},
+	{
+		questionNumber: 14,
+		cover: 'img/14.jpg',
+		question: 'Nowadays Abyssinia is called...',
+		option1: 'Ethiopia',
+		option2: 'Greece',
+		option3: 'Uganda',
+		answer: 'Ethiopia',
+	},
+	{
+		questionNumber: 15,
+		cover: 'img/15.jpg',
+		question: 'Nowadays Prussia is called...',
+		option1: 'Saudi Arabia',
+		option2: 'Germany',
+		option3: 'Sweden',
+		answer: 'Germany',
+	}
+	];
+	
+	$scope.checkAnswer = function (idx, selectedAnswer) {
+		if ($scope.items[idx].answer == selectedAnswer) {
+			$scope.class1 = "button-green";
+			console.log(selectedAnswer);
+		}
+	};
+	
+}]);
