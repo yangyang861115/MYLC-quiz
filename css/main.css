@@ -6,7 +6,7 @@
 	/*width: 100%; */	
 	background-color: #D3D3D3; /*LightGray color*/	
 	position: fixed;
-	transform: translateX(10%, 10%);	
+	transform: translateX(10%, 10%);
 	z-index: 5;
 }
 
@@ -35,26 +35,32 @@
 	position: absolute;
 	top: 1.5em;
 	left: -5.4em;
+	z-index: 4;
 }
 
 .btn.nohover:hover {
     color: white;
-}	
+}
 
 .btn-default:hover {
 	background-color: yellow;
-	background-position: 60px 60px;	
-}
-
-.button-green {
-	background-color: green;
-	color: white;
 	background-position: 60px 60px;
 }
 
+.button-green {
+	background-color: green !important;
+	color: white;
+}
+
+.button-red {
+	background-color: red !important;
+	color: white;
+}
+
+
 .panel-transparent {
     background: none;
-    background: rgba(179, 179, 0, 0.2)!important; 
+    background: rgba(179, 179, 0, 0.2)!important;
 }
 
 .font-size {
