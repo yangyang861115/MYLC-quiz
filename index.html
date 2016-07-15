@@ -106,12 +106,34 @@
             </div>
         </div>
         <!--end of questions-->
-        <!--score-->
-        <div id="score" ng-if="model.result.completed">
-            <h1>You know quite a lot about history!</h1>
-            <pre>{{model.result | json}}</pre>
+
+        <div class="final_result_score_wrapper" id="score" ng-if="model.result.completed">
+
+            <!--header-->
+            <div class="final_result_score_header">{{model.result.msg}}</div>
+
+            <!--Image Container-->
+            <div class="final_result_image_wrapper">
+                <!--Image-->
+                <div class="final_result_image">
+                    <img class="results_image" src="http://cdn.playbuzz.com/cdn/25a9ee80-4bd3-44c1-8356-5e22bf7e0397/f93fedd3-7d04-4fd5-8c21-393863e854e7.jpg" alt="{{model.result.msg}}" style="height: 481px;">
+                </div>
+                <!--score-->
+                <div class="final_result_score">
+                    <div class="final_result_score_inner">
+                        <div id="final_result_score_text">{{model.result.correct}}</div>
+                        <div id="final_result_score_length">Right!</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
-        <!--end of score-->
+        <div ng-if="model.result.completed">
+            <button class="btn btn-info pull-right" ng-click="model.restart()">Try Again</button>
+        </div>
 
 
     </div>
